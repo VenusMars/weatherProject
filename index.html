@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather data</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2rem;
+            background-color: black;
+            color: white;
+            background-image: url("https://cdn.pixabay.com/photo/2013/10/02/23/03/mountains-190055_960_720.jpg");
+            background-size: cover;
+        }
+        input{
+            height:50px;
+            width:200px;
+            font-size: x-large;
+            background-color: grey;
+            color: white;
+            text-align: center;
+        }
+        button{
+            height: 50px;
+            width:100px;
+            padding:5px;
+        }
+        .cont{
+            margin: 2% 10% 5%;
+            background-image: linear-gradient(to right, blue , green);
+            padding: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <h2>Check Weather Data for the given city</h2>
+
+        <form action="/" method="post">
+            <label for="city">Enter the city Name: </label>
+            <input type="text" name="city" placeholder="City name" autocomplete="off" autofocus="on">
+            <button type="submit">GO</button>
+        </form>
+    </div>
+ 
+</body>
+</html>
